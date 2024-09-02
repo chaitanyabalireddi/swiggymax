@@ -1,0 +1,362 @@
+*{
+    font-family: monospace;
+    font-weight: 600;
+}
+body{
+    background-color: rgb(226, 101, 43);
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    border: 2.5px solid rgba(0, 0, 0, 0.137);
+    border-top: 0px;
+    border-left: 0px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    box-shadow: 10px solid black;
+}
+.logohead img{
+    color: rgb(226, 101, 43);
+    position: absolute;
+    top: 20px;
+    right: 85%;
+    height: 85px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    color: rgb(226, 101, 43);
+}
+.navbar p{
+    white-space: nowrap;
+    position:relative;
+    left: 17%;
+    align-content: center;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+}
+.navbar a{
+    color:  rgb(226, 101, 43);
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: black;
+}
+button{
+    height:30px;
+    position: absolute;
+    left: 225px;
+    top: 11.px;
+    color:  rgb(226, 101, 43);
+    border: 1px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+}
+button:hover{
+    color: black;
+}
+
+input{
+     color: black;
+     height: 30px;
+     width: 250px;
+     border: 1px solid rgb(226, 102, 43);
+     border-radius: 20px;
+     padding: 10px;
+}
+input:hover{
+    border: 2px solid black;
+}
+p:hover{
+    color: black;
+}
+p::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orangered;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+p:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+i{
+    position: relative;
+    top: 2.4px;
+}
+select{
+    position: relative;
+    top: 40px;
+    left: 35px;
+    border: none;
+    color:  rgb(226, 101, 43);
+    font-size: larger;
+}
+.main{
+    position: absolute;
+    left: 15%;
+    top: 105%;
+}
+.main h1{
+    font-size: x-large;
+    font-family: cursive;
+}
+.items{
+    position: absolute;
+    left: 280px;
+    top: 190px;
+}
+.items img{
+    width: 100px;
+    filter: drop-shadow(2px 2px 2px );
+}
+.items label{
+    display:flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family:'Times New Roman', Times, serif; 
+}
+
+.items img:hover{
+    transform:scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.pizza{
+    position: absolute;
+    left: 420px;
+    top: 200px;
+}
+.pizza img{
+    width: 135px;
+    filter: drop-shadow(2px 2px 2px );
+}
+.pizza label{
+ position: relative;
+ left: 90px;
+ bottom: -20px;
+ color:rgba(255, 255, 255, .6);
+ font-family: 'Times New Roman', Times, serif;
+}
+.pizza img:hover{
+    transform:scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.burger{
+    position: absolute;
+    left: 630px;
+    top: 200px;
+}
+.burger img{
+    width: 110px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.burger label{
+    position: relative;
+ left: 90px;
+ bottom: -20px;
+ color:rgba(255, 255, 255, .6);
+ font-family: 'Times New Roman', Times, serif;
+}
+.burger img:hover{
+    transform:scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.shawarma{
+    position: absolute;
+    left: 825px;
+    top: 178px;
+}
+.shawarma img{
+    width: 135px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.shawarma label{
+    position: relative;
+    left: 87px;
+    bottom: 25px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.shawarma img:hover{
+    transform:scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.chinese{
+    position: absolute;
+    left: 1090px;
+    top: 200px;
+}
+.chinese img{
+    width: 123px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.chinese label{
+    position: relative;
+    left: 97px;
+    top: 18px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.chinese img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.icecream{
+    position: absolute;
+    left: 1300px;
+    top: 185px;
+}
+.icecream img{
+    width: 127px;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px);
+}
+.icecream label{
+    position: relative;
+    left: 97px;
+    top: 15px;
+    color:rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.icecream img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.cakes{
+    position: absolute;
+    left: 219px;
+    top: 350px;
+}
+.cakes img{
+    width: 120px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.cakes label{
+position: relative;
+left: 90px;
+top: 20px;
+color: rgba(255, 255, 255, .6);
+font-family: 'Times New Roman', Times, serif;
+}
+.cakes img:hover{
+transform: scale(130%);
+transition: 0.3s ease-in-out 0s;
+}
+.kebabs{
+position: absolute;
+top: 350px;
+left: 429px;
+}
+.kebabs img{
+    width: 115px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.kebabs label{
+    position: relative;
+    left: 90px;
+    top: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.kebabs img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.northindian{
+    position: absolute;
+    left: 595px;
+    top: 340px;
+}
+.northindian img{
+    width: 110px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.northindian label{
+    position: relative;
+    left: 108px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.northindian img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.pasta{
+position: absolute;
+left: 850px;
+top: 359px;
+}
+.pasta img{
+    width: 125px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.pasta label{
+    position: relative;
+    left: 90px;
+    top: 5px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.pasta img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
+.tiffins{
+    position: absolute;
+    left: 1090px;
+    top: 325px;
+
+}
+.tiffins img{
+    width: 115px;
+    filter: drop-shadow(2px 2px 2px);
+}
+.tiffins label{
+    position: relative; 
+    left: 90px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.tiffins img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out;
+}
+.momos{
+    position: absolute;
+    left: 1325px;
+    top: 330px
+}
+.momos img{
+    width: 110px;
+    filter: drop-shadow(2px 2px 2px );
+}
+.momos label{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.momos img:hover{
+    transform: scale(130%);
+    transition: 0.3s ease-in-out 0s;
+}
